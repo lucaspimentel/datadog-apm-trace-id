@@ -1,10 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
+        <AssemblyName>dd-trace-id</AssemblyName>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
+        <!--
         <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
         <PublishTrimmed>true</PublishTrimmed>
         <PublishAot>true</PublishAot>
+        -->
 
         <!-- AOT size optimization options -->
         <!-- https://learn.microsoft.com/en-us/dotnet/core/deploying/trimming/trimming-options?pivots=dotnet-7-0#trimming-framework-library-features -->
@@ -23,5 +26,6 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 </Project>
