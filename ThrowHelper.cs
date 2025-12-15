@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 
 namespace Datadog.Trace.Util
 {
-    internal class ThrowHelper
+    internal static class ThrowHelper
     {
         [MethodImpl(MethodImplOptions.NoInlining)]
         [DebuggerHidden]
